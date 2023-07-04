@@ -3,6 +3,7 @@
   margin: 0;
 }
 
+
 header {
   position: fixed;
   width: 100%;
@@ -30,10 +31,10 @@ h2 {
 
 .question-card {
   border: 1px solid black;
-  height: 300px;
-  width: 400px;
+  height: 280px;
+  width: 90%;
   margin: 1rem;
-  padding: 5%; 
+  padding-top: 10%; 
   border-radius: 5px;
   position: relative;
 }
@@ -96,5 +97,5 @@ footer nav {
 
 
 .bookmark-picture-within-footer {
-  height: 4em;
+  height: 2em;
 }
