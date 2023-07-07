@@ -1,23 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Quiz App</h1>
-      </header>
+      <h1>Quiz App</h1>
+    </header>
 
-      <main>
-        <p>Es gibt hier nichts zu sehen, bitte gehen Sie weiter.</p>
-      </main>
+    <main>
+      <img
+        src="./assets/rabbit-g3881eada1_1280.jpg"
+        alt="Profile picture of Dr. K. Nickel"
+        height="50px"
+        width="auto"
+      />
 
-      <footer>
-        <nav>
-          <a href="index.html" aria-label="go to home page"
+      <section class="aboutMyself">
+        <h2 class="aboutMyself__heading">About Myself</h2>
+        <p class="aboutMyself__Statement">
+          I am an analytic mind who values openness, communication, clarity in
+          thought, emotion, and expression. #Strictlyemotional
+        </p>
+        <p class="aboutMyself__Statement">
+          Things I like to do inlcude chess, cyclcing, bouldering, eating,
+          sleeping. #Haphazardlyinterested
+        </p>
+        <p class="aboutMyself__Statement">
+          I am good at most of the of the above. #Hybris!?
+        </p>
+      </section>
+
+      <div class="counterButtons">
+        <button type="button" class="counterButtons__button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 320 512"
+            aria-label="counter for created questions"
+          >
+            <path
+              d="M80 160c0-35.3 28.7-64 64-64h32c35.3 0 64 28.7 64 64v3.6c0 21.8-11.1 42.1-29.4 53.8l-42.2 27.1c-25.2 16.2-40.4 44.1-40.4 74V320c0 17.7 14.3 32 32 32s32-14.3 32-32v-1.4c0-8.2 4.2-15.8 11-20.2l42.2-27.1c36.6-23.6 58.8-64.1 58.8-107.7V160c0-70.7-57.3-128-128-128H144C73.3 32 16 89.3 16 160c0 17.7 14.3 32 32 32s32-14.3 32-32zm80 320a40 40 0 1 0 0-80 40 40 0 1 0 0 80z"
+            />
+          </svg>
+          <span>Number of questions created</span>
+        </button>
+        <button type="button" class="counterButtons__button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="1em"
+            viewBox="0 0 384 512"
+            aria-label="counter for number of bookmarked questions"
+          >
+            <path
+              d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
+            />
+          </svg>
+          <span>Number of questions created</span>
+        </button>
+      </div>
+
+      <section class="settings">
+        <h2 class="settings__heading">Settings</h2>
+        <ul role="list" class="settings__listOfSettings">
+          <li class="settings__listEntryForSpecificSetting">
+            <span>Dark Mode</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <nav>
+        <a href="index.html" aria-label="go to home page"
           ><img
             class="bookmark-picture-within-footer"
             src="assets/home-white.svg"
@@ -36,7 +98,6 @@
             alt="svg of black user-icon"
         /></a>
       </nav>
-      </footer>
-    
-</body>
+    </footer>
+  </body>
 </html>
