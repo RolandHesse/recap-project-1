@@ -1,0 +1,51 @@
+
+.question-card {
+    border: 1px solid black;
+    height: 280px;
+    width: 90%;
+    margin: 1rem;
+    padding-top: 10%; 
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .flex-container {
+    margin: auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .question-card ul {
+    position: absolute;
+    left: -30px;
+    bottom: 10px;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  li {
+    list-style: none;
+    margin: 2px;
+    padding: 1px 3px 1px 3px;
+    border: 1px solid black;
+    border-radius: 2px;
+    background-color: lightgrey;
+  }
+  
+  .bookmark-picture-within-card {
+    height: 4rem;
+    position: absolute;
+    top: -1.2rem;
+    right: 0.5rem;
+  }
+  
+  .bookmark {
+    all: unset;
+  }

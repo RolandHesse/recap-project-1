@@ -1,0 +1,13 @@
+
+header {
+    position: fixed;
+    width: 100%;
+    border: 2px solid black;
+    padding: 0.5rem;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 10;
+  }
