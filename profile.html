@@ -6,35 +6,44 @@
     <title>Profile Page</title>
     <link rel="stylesheet" href="CSS/styles.css" />
   </head>
+
   <body>
     <header>
       <h1>Quiz App</h1>
     </header>
 
     <main>
-      <img
-        src="./assets/rabbit-g3881eada1_1280.jpg"
-        alt="Profile picture of Dr. K. Nickel"
-        height="50px"
-        width="auto"
-      />
-
-      <section class="aboutMyself">
-        <h2 class="aboutMyself__heading">About Myself</h2>
-        <p class="aboutMyself__Statement">
-          I am an analytic mind who values openness, communication, clarity in
-          thought, emotion, and expression. #Strictlyemotional
-        </p>
-        <p class="aboutMyself__Statement">
-          Things I like to do inlcude chess, cyclcing, bouldering, eating,
-          sleeping. #Haphazardlyinterested
-        </p>
-        <p class="aboutMyself__Statement">
-          I am good at most of the of the above. #Hybris!?
-        </p>
+      <section class="picture-and-name">
+        <div>
+          <img
+            class="profile-picture"
+            src="./assets/rabbit-g3881eada1_1280.jpg"
+            alt="Profile picture of Dr. K. Nickel"
+            height="50px"
+            width="50px"
+          />
+        </div>
+        <h2 class="profile-name">Dr. K. Nickel</h2>
       </section>
 
-      <div class="counterButtons">
+      <section class="about-me-list">
+        <h2 class="about-me__heading">About Me</h2>
+        <ul>
+          <li class="about-me__Statement">
+            I am an analytic mind who values openness, communication, clarity in
+            thought, emotion, and expression. #Strictlyemotional
+          </li>
+          <li class="about-me__Statement">
+            Things I like to do inlcude chess, cycling, bouldering, eating,
+            sleeping. #Haphazardlyinterested
+          </li>
+          <li class="about-me__Statement">
+            I am mediocre at most of the of the above. #Counterhybris!?
+          </li>
+        </ul>
+      </section>
+
+      <section class="counterButtons">
         <button type="button" class="counterButtons__button">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -59,9 +68,9 @@
               d="M0 48V487.7C0 501.1 10.9 512 24.3 512c5 0 9.9-1.5 14-4.4L192 400 345.7 507.6c4.1 2.9 9 4.4 14 4.4c13.4 0 24.3-10.9 24.3-24.3V48c0-26.5-21.5-48-48-48H48C21.5 0 0 21.5 0 48z"
             />
           </svg>
-          <span>Number of questions created</span>
+          <span>Number of bookmarks</span>
         </button>
-      </div>
+      </section>
 
       <section class="settings">
         <h2 class="settings__heading">Settings</h2>
