@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Page</title>
     <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="./index.js" defer></script>
   </head>
 
-  <body>
+  <body data-js="body-element">
     <header>
       <h1>Quiz App</h1>
     </header>
@@ -74,15 +75,10 @@
 
       <section class="settings">
         <h2 class="settings__heading">Settings</h2>
-        <ul role="list" class="settings__listOfSettings">
-          <li class="settings__listEntryForSpecificSetting">
-            <span>Dark Mode</span>
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider round"></span>
-            </label>
-          </li>
-        </ul>
+        <label for="dark-mode-button">Dark Mode</label>
+        <button type="button" id="dark-mode-button" data-js="dark-mode-button">
+          Fear of the dark?
+        </button>
       </section>
     </main>
 
