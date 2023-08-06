@@ -22,5 +22,21 @@ li {
 
 .dark-mode {
   color: white;
-  background-color: black !important;
+  background-color: black;
+}
+
+.dark-mode-header {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.dark-mode-footer {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.dark-mode-footerIcon {
+  display: none
 }
