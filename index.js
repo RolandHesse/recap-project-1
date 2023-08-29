@@ -17,16 +17,30 @@
 //   }
 // });
 
-//Toggle-functionality
+//Toggle-functionality for bookmark button
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
-const bookmarkIcon = document.querySelector('[data-js="bookmark-icon"]');
-
-console.log(bookmarkIcon);
+const bookmarkIconBlack = document.querySelector(
+  '[data-js="bookmark-icon__black"]'
+);
 
 bookmarkButton.addEventListener("click", () => {
-  if (bookmarkIcon.hidden === true) {
-    bookmarkIcon.removeAttribute("hidden");
+  if (bookmarkIconBlack.hidden === true) {
+    bookmarkIconBlack.removeAttribute("hidden");
   } else {
-    bookmarkIcon.setAttribute("hidden", "");
+    bookmarkIconBlack.setAttribute("hidden", "");
+  }
+});
+
+//Toggle-functionality for answer button
+const answerButton = document.querySelector('[data-js="answer-button"]');
+const answer = document.querySelector('[data-js="answer"]');
+
+answerButton.addEventListener("click", () => {
+  if (answer.hidden === true) {
+    answerButton.textContent = "Hide Answer";
+    answer.removeAttribute("hidden");
+  } else {
+    answer.setAttribute("hidden", "");
+    answerButton.textContent = "Show Answer";
   }
 });
