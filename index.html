@@ -15,17 +15,26 @@
 
     <main>
       <section class="question-card card-1">
-        <button type="button" class="bookmark" aria-label="Add bookmark for this card">
+        <button type="button" class="bookmark" aria-label="Add bookmark for this card" data-js="bookmark-button">
           <img
+             
             class="bookmark-picture-within-card"
             src="assets/bookmark-white.svg"
             alt="svg bookmark-white"
+            
+          />
+          <img
+            data-js="bookmark-icon__black"  
+            class="bookmark-picture-within-card"
+            src="assets/bookmark-black.svg"
+            alt="svg bookmark-black"
+            hidden
           />
         </button>
         <div class="flex-container">
           <h2>What property flips the axes in flexbox?</h2>
-          <button type="button" class="answer-button">Show Answer</button>
-          <p class="answer">flex-direction</p>
+          <button type="button" class="answer-button" data-js="answer-button">Show Answer</button>
+          <p class="answer" data-js="answer" hidden>flex-direction</p>
         </div>
         <ul role="list" class="hashtag-list">
           <li>#html</li>
