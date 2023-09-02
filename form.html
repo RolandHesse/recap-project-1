@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-< lang="en">
+<lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,13 +16,20 @@
     <main>
       <form data-js="form">
         <label for="question">Your question: </label>
-        <textarea name="question" id="question" cols="30" rows="5"></textarea>
+        <textarea name="question" id="question" cols="30" rows="5" maxlength="150" data-js="question-textarea"></textarea>
+        <p data-js="question-character-count">150 characters left</p>
+        <br>
         <label for="answer">Your answer: </label>
-        <textarea name="answer" id="answer" cols="30" rows="5"></textarea>
+        <textarea name="answer" id="answer" cols="30" rows="5" maxlength="150" data-js="answer-textarea"></textarea>
+        <p data-js="answer-character-count">150 characters left</p>
+        <br>
         <label for="tag">Tag: </label>
         <input type="text" name="tag" id="tag">
+        <br>
         <button type="submit">Submit</button>
+        <br>
       </form>
+     
     </main>
 
     <footer>
