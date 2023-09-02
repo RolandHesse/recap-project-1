@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="./form.js" defer></script>
+  </head>
+
+  <body data-js="body-element">
+    <header>
+      <h1>Quiz App</h1>
+    </header>
+
+    <main>
+      <form data-js="form">
+        <label for="question">Your question: </label>
+        <textarea name="question" id="question" cols="30" rows="5" maxlength="150" data-js="question-textarea"></textarea>
+        <p data-js="question-character-count">150 characters left</p>
+        <br>
+        <label for="answer">Your answer: </label>
+        <textarea name="answer" id="answer" cols="30" rows="5" maxlength="150" data-js="answer-textarea"></textarea>
+        <p data-js="answer-character-count">150 characters left</p>
+        <br>
+        <label for="tag">Tag: </label>
+        <input type="text" name="tag" id="tag">
+        <br>
+        <button type="submit">Submit</button>
+        <br>
+      </form>
+     
+    </main>
+
+    <footer>
+      <nav>
+        <a href="index.html" aria-label="go to home page"
+        ><img
+          class="picture-within-footer"
+          src="assets/home-white.svg"
+          alt="svg of black home-buttom"
+      /></a>
+      <a href="bookmarks.html" aria-label="go to bookmarks page"
+        ><img
+          class="picture-within-footer"
+          src="assets/bookmark-white.svg"
+          alt="svg of bookmark-white"
+      /></a>
+      <a href="form.html" aria-label="go to form page"
+        ><img
+          class="picture-within-footer"
+          src="assets/add-sign-black.svg"
+          alt="svg of bookmark-white"
+      /></a>
+      <a href="profile.html" aria-label="go to profile page"
+        ><img
+          class="picture-within-footer"
+          src="assets/user-white.svg"
+          alt="svg of user user-white"
+      /></a>
+    </nav>
+    </footer>
+  </body>
+</html>
